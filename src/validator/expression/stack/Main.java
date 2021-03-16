@@ -15,7 +15,8 @@ public class Main {
     }
 
     /*
-    The functionality of this method is to perform the user's desired task based on the option provided as a parameter
+    The functionality of this method is to perform the user's
+    desired task based on the option provided as a parameter
      */
     private static boolean performTask(char option, Expression myExpression) {
         switch (option) {
@@ -48,7 +49,8 @@ public class Main {
         if (myExpression.validateExpression()) {
             System.out.println("\nProvided Expression is valid!\n");
         } else {
-            System.out.println("\nInvalid Expression provided. Please enter a valid Expression!");
+            System.out.println("\nInvalid Expression provided. Please enter" +
+                    " a valid Expression!");
         }//END OF IF/ELSE
     }
 
@@ -57,7 +59,8 @@ public class Main {
      and pass it to the setExpression method of the Expression class.
      */
     private static void addAnExpression(Expression myExpression) {
-        System.out.print("\n\nPlease enter your new expression(Max character limit: 25) here: \t");
+        System.out.print("\n\nPlease enter your new expression" +
+                "(Max character limit: 25) here: \t");
         String expression = new Scanner(System.in).nextLine();
         try {
             myExpression.setExpression(expression);
@@ -73,7 +76,8 @@ public class Main {
     }
 
     /*
-    The functionality of this method is to validate the user's input and return the option selected by the user
+    The functionality of this method is to validate the user's input
+    and return the option selected by the user
      */
     private static char getOption(boolean expressionIsEmpty) {
         char option = new Scanner(System.in).next().charAt(0);

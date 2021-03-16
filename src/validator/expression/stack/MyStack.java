@@ -11,21 +11,25 @@ public class MyStack {
     }
 
     /*
-    This method returns the element located at the top most location of the stack
+    This method returns the element located at
+    the top most location of the stack
      */
     public char peek() {
         return stack[top - 1];
     }
 
     /*
-    This method returns and deletes the element located at the top most location of the stack
+    This method returns and deletes the element
+     located at the top most location of the stack
      */
     public char pop() {
         return stack[--top];
     }
 
     /*
-    The functionality of thi method is to compare the given element with the one located at the top of the stack without deleting it
+    The functionality of thi method is to compare
+    the given element with the one located at the
+    top of the stack without deleting it
      */
     public boolean equals(char character) {
         return stack[top - 1] == character;
@@ -53,8 +57,9 @@ public class MyStack {
     }
 
     /*
-    This method returns a boolean based on the value of the top, If the top is equal less
-     than 1 it means that the stack is empty else the stack have a value, so it will return true
+    This method returns a boolean based on the value of the top
+    , If the top is equal less than 1 it means that the stack is
+     empty else the stack have a value, so it will return true
      */
     public boolean hasNext() {
         return top > 0;
